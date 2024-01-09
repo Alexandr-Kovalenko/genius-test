@@ -191,6 +191,8 @@ ul {
 
 /* Advantages section */
 .advantages-section {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 16px;
   background-color: var(--color-primary-brand);
 }
@@ -236,16 +238,25 @@ ul {
 
 /* Chefs section */
 .chefs-title {
-  max-width: 540px;
+  position: relative;
   margin: 0 auto 80px;
 }
 
 .chefs-title::before,
 .chefs-title::after {
-  display: block;
+  position: absolute;
+  bottom: 24px;
   width: 352px;
   border: 2px solid var(--color-secondary-grey);
   content: "";
+}
+
+.chefs-title::before {
+  left: 0;
+}
+
+.chefs-title::after {
+  right: 0;
 }
 
 .chefs-list {
@@ -373,10 +384,6 @@ ul {
 }
 
 /* Footer */
-.footer {
-  padding: 32px 0;
-}
-
 .footer-container {
   display: flex;
   gap: 20px;
@@ -391,12 +398,12 @@ ul {
 
 .footer-logo,
 .footer-menu {
-  flex-basis: 50%;
+  flex-grow: 1;
 }
 
 .address-list,
 .address-info {
-  flex-basis: 50%;
+  flex-grow: 1;
 }
 
 .address-link {
@@ -422,11 +429,68 @@ ul {
 }
 
 .footer {
+  position: relative;
   max-width: 1440px;
   margin: 0 auto;
+  padding: 32px 0;
   background-color: var(--color-primary-dark);
   background-image: url("../images/footer.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 0;
+  content: "";
+}
+
+.footer::before {
+  width: 179px;
+  height: 121px;
+  left: 0;
+  background-image: url(../images/decor-bread-small.png);
+}
+
+.footer::after {
+  width: 378px;
+  height: 187px;
+  right: 0;
+  background-image: url(../images/decor-bread-large.png);
+}
+
+/* Modal window */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 880px;
+  height: 880px;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  right: 40px;
+  top: 40px;
 }
