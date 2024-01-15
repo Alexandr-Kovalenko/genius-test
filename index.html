@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./scss/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -67,6 +67,7 @@
               </p>
             </div>
             <img
+              class="traditions-image"
               src="./images/baker-man.svg"
               alt="Чоловік з посмішкою дивиться на батони"
             />
@@ -128,6 +129,11 @@
             <ul class="formats-card">
               <li class="format-item">
                 <article class="format">
+                  <img
+                    class="format-image"
+                    src="./images/Walrus.jpg"
+                    alt="Зображення фомату Walrus"
+                  />
                   <h3 lang="en" class="format-title">Walrus</h3>
                   <div class="format-text">
                     <p>Площа: до 120 м2</p>
@@ -142,6 +148,11 @@
               </li>
               <li class="format-item">
                 <article class="format">
+                  <img
+                    class="format-image"
+                    src="./images/Horseshoe.jpg"
+                    alt="Зображення фомату Horseshoe"
+                  />
                   <h3 lang="en" class="format-title">Horseshoe</h3>
                   <div class="format-text">
                     <p>Площа: до 25 м2</p>
@@ -153,6 +164,11 @@
               </li>
               <li class="format-item">
                 <article class="format">
+                  <img
+                    class="format-image"
+                    src="./images/Handlebar.jpg"
+                    alt="Зображення фомату Handlebar"
+                  />
                   <h3 lang="en" class="format-title">Handlebar</h3>
                   <div class="format-text">
                     <p>Площа: до 15 м2</p>
@@ -305,7 +321,7 @@
 
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal-btn-close" type="button">x</button>
         <h2 class="title-form">Замовити дзвінок</h2>
         <p class="text-under-title">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
@@ -318,6 +334,7 @@
             name="user-name"
             id="user-name"
             placeholder="Ім'я"
+            required
           />
 
           <label class="visually-hidden" for="user-tel">Телефон</label>
@@ -327,6 +344,7 @@
             name="user-tel"
             id="user-tel"
             placeholder="Телефон"
+            required
           />
 
           <label class="visually-hidden" for="user-email"
@@ -338,6 +356,7 @@
             name="user-email"
             id="user-email"
             placeholder="Електронна пошта"
+            required
           />
 
           <button type="submit" class="button-form button">
@@ -348,6 +367,11 @@
               Натискаючи на кнопку я погоджуюсь<br />
               <a class="terms-link" href="#">з політикою конфіденційності</a>
             </p>
+            <img
+              class="modal-image"
+              src="./images/bread_in_modal_window.png"
+              alt="Хліб з надписом по колу"
+            />
           </div>
         </form>
       </div>

@@ -1,0 +1,18 @@
+.advantages-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: var(--color-primary-brand);
+}
+
+.adventages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.adventages-item {
+  color: var(--color-primary-light);
+  font-size: 20px;
+  font-weight: 300;
+}
