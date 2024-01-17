@@ -1,0 +1,35 @@
+.contact-section {
+  padding-bottom: 96px;
+
+  &__container {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-secondary-green);
+  }
+
+  &__map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+  }
+
+  &__form-field {
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 16px;
+  }
+}

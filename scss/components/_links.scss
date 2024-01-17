@@ -2,10 +2,10 @@
   color: var(--color-primary-light);
   text-decoration: none;
   transition: color 0.5s;
-}
 
-.link:hover {
-  color: var(--color-primary-brand);
+  &:hover {
+    color: var(--color-primary-brand);
+  }
 }
 
 .address-link {
@@ -14,9 +14,9 @@
   color: var(--color-primary-light);
   text-decoration: none;
   transition: color 0.5s;
-}
 
-.address-link:hover {
-  color: var(--color-primary-brand);
-  font-weight: 300;
+  &:hover {
+    color: var(--color-primary-brand);
+    font-weight: 300;
+  }
 }

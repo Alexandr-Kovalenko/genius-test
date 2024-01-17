@@ -1,0 +1,21 @@
+.section {
+  padding: 48px 0;
+
+  &__title {
+    font-family: "Poppins", sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.3;
+
+    &--centered {
+      text-align: center;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
