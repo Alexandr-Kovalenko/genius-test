@@ -1,33 +1,45 @@
 .chefs-section {
   &__title {
     position: relative;
-    margin: 0 auto 80px;
+    margin: 0 auto 24px;
 
-    &::before,
-    &::after {
-      position: absolute;
-      bottom: 24px;
-      width: 352px;
-      border: 2px solid var(--color-secondary-grey);
-      content: "";
-    }
-    &::before {
-      left: 0;
-    }
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 80px;
 
-    &::after {
-      right: 0;
+      &::before,
+      &::after {
+        position: absolute;
+        bottom: 24px;
+        width: 352px;
+        border: 2px solid var(--color-secondary-grey);
+        content: "";
+      }
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
     }
   }
 
   &__list {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 40px;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      column-gap: 30px;
+      row-gap: 40px;
+    }
   }
 
   &__item {
-    flex-basis: calc((100% - 30px) / 2);
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
 }

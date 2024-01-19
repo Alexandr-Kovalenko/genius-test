@@ -11,24 +11,52 @@
 
   &__container {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
   }
 
   &__nav,
   &__address {
     display: flex;
-    flex-basis: 50%;
+    align-items: center;
+    flex-direction: column;
     gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      align-items: start;
+      flex-basis: 50%;
+    }
   }
 
   &__logo,
   &__menu {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    gap: 16px;
   }
 
   &__list,
   &__info {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    gap: 16px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: start;
+    }
   }
 
   &__copyright {

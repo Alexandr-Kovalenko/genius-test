@@ -3,20 +3,13 @@
     margin-bottom: 80px;
   }
 
-  &__container {
+  &__slider {
     display: flex;
     align-items: center;
     gap: 32px;
   }
 
-  &__list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  &__item {
-    flex-basis: calc((100% - 40px) / 3);
+  &__container {
+    overflow: hidden;
   }
 }
