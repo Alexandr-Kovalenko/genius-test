@@ -8,6 +8,18 @@
   }
 }
 
+.mobile-menu-link {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  transition-duration: 0.5s;
+  font-size: 14px;
+  font-weight: 300;
+
+  &:hover {
+    color: var(--color-primary-brand);
+  }
+}
+
 .address-link {
   font-size: 16px;
   font-weight: 300;

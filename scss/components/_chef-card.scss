@@ -10,11 +10,13 @@
   &__photo {
     width: 140px;
     border-radius: 4px 4px 4px 200px;
-    box-shadow: -16px 16px 0 0 var(--color-primary-light),
-      -16px 16px 0 1px var(--color-secondary-brown);
+    box-shadow: -10px 10px 0 0 var(--color-primary-light),
+      -10px 10px 0 1px var(--color-secondary-brown);
 
     @media screen and (min-width: $bp-desktop) {
       width: 240px;
+      box-shadow: -16px 16px 0 0 var(--color-primary-light),
+        -16px 16px 0 1px var(--color-secondary-brown);
     }
   }
 

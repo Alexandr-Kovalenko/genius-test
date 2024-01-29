@@ -72,21 +72,35 @@
   &::after {
     position: absolute;
     background-repeat: no-repeat;
-    bottom: 0;
     content: "";
   }
 
   &::before {
-    width: 179px;
-    height: 121px;
+    width: 82px;
+    height: 206px;
     left: 0;
-    background-image: url(../images/decor-bread-small.png);
+    top: 0;
+    background-image: url(../images/decor-bread-top-mobile.png);
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 179px;
+      height: 121px;
+      bottom: 0;
+      background-image: url(../images/decor-bread-small.png);
+    }
   }
 
   &::after {
-    width: 378px;
-    height: 187px;
+    width: 102px;
+    height: 91px;
     right: 0;
-    background-image: url(../images/decor-bread-large.png);
+    bottom: 0;
+    background-image: url(../images/decor-bread-bottom-mobile.png);
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 378px;
+      height: 187px;
+      background-image: url(../images/decor-bread-large.png);
+    }
   }
 }
