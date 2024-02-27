@@ -51,18 +51,36 @@
             </div>
             <ul class="mobile-menu__list">
               <li>
-                <a class="mobile-menu-link" href="./index.html"
+                <a
+                  class="mobile-menu-link"
+                  href="./index.html#traditions-section"
+                  id="traditions"
                   >Наші традиції</a
                 >
               </li>
               <li>
-                <a class="mobile-menu-link" href="./index.html">Шеф-кухарі</a>
+                <a
+                  class="mobile-menu-link"
+                  href="./index.html#chefs-section"
+                  id="chefs"
+                  >Шеф-кухарі</a
+                >
               </li>
               <li>
-                <a class="mobile-menu-link" href="./index.html">Формати</a>
+                <a
+                  class="mobile-menu-link"
+                  href="./index.html#formats-section"
+                  id="formats"
+                  >Формати</a
+                >
               </li>
               <li>
-                <a class="mobile-menu-link" href="./index.html">Контакти</a>
+                <a
+                  class="mobile-menu-link"
+                  href="./index.html#contact-section"
+                  id="contact"
+                  >Контакти</a
+                >
               </li>
             </ul>
           </div>
@@ -477,46 +495,41 @@
         <p class="modal__text">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
-        <form name="modal-form" autocomplete="off">
+        <form name="modal-form" autocomplete="off" id="form" class="form">
           <div class="modal__form-field input">
-            <label class="input__label visually-hidden" for="user-name"
-              >Ім'я</label
-            >
+            <label class="input__label visually-hidden" for="name">Ім'я</label>
             <input
-              class="input__control"
+              class="input__control _req"
               type="text"
-              name="user-name"
+              name="name"
               id="user-name"
               placeholder="Ім'я"
-              required
             />
           </div>
 
           <div class="modal__form-field input">
-            <label class="input__label visually-hidden" for="user-tel"
+            <label class="input__label visually-hidden" for="tel"
               >Телефон</label
             >
             <input
-              class="input__control"
+              class="input__control _req"
               type="tel"
-              name="user-tel"
+              name="tel"
               id="user-tel"
               placeholder="Телефон"
-              required
             />
           </div>
 
           <div class="modal__form-field input">
-            <label class="input__label visually-hidden" for="user-email"
+            <label class="input__label visually-hidden" for="email"
               >Електронна пошта</label
             >
             <input
-              class="input__control"
+              class="input__control _req _email"
               type="email"
-              name="user-email"
+              name="email"
               id="user-email"
               placeholder="Електронна пошта"
-              required
             />
           </div>
 
@@ -530,13 +543,13 @@
                 >з політикою конфіденційності</a
               >
             </p>
-            <img
-              class="modal__image"
-              src="./images/bread_in_modal_window.png"
-              alt="Хліб з надписом по колу"
-            />
           </div>
         </form>
+        <img
+          class="modal__image"
+          src="./images/bread_in_modal_window.png"
+          alt="Хліб з надписом по колу"
+        />
       </div>
     </div>
 
@@ -544,5 +557,6 @@
     <script src="./js/mobile-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/formats-slider.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>

@@ -18,6 +18,12 @@
 
     &:focus {
       border-color: var(--color-primary-brand);
+      box-shadow: 0 0 15px var(--color-primary-brand);
+      outline: none;
+    }
+
+    &._error {
+      box-shadow: 0 0 15px red;
       outline: none;
     }
 
